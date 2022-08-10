@@ -65,7 +65,7 @@ class IntroSection extends StatelessWidget {
                             'Puspal Tarafdar',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 80,
+                              fontSize: 70,
                               color: kwhite,
                             ),
                           ),

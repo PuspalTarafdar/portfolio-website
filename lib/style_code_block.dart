@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'constants.dart';
 
 class StyleCodeBlock extends StatelessWidget {
@@ -9,7 +10,7 @@ class StyleCodeBlock extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 370,
+      height: 350,
       width: 320,
       padding: const EdgeInsets.all(30),
       decoration: BoxDecoration(
@@ -25,38 +26,36 @@ class StyleCodeBlock extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           RichText(
-            text: const TextSpan(
-              children: [
+            
+            text: TextSpan(
+              style: GoogleFonts.courierPrime(),
+              children: const [
                 TextSpan(
                   text: 'while',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     color: korange,
-                    fontFamily: 'Inconsolata',
                   ),
                 ),
                 TextSpan(
                   text: '(',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     color: Colors.purple,
-                    fontFamily: 'Inconsolata',
                   ),
                 ),
                 TextSpan(
                   text: 'alive',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     color: Colors.green,
-                    fontFamily: 'Inconsolata',
                   ),
                 ),
                 TextSpan(
                   text: ')',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     color: Colors.purple,
-                    fontFamily: 'Inconsolata',
                   ),
                 ),
               ],
@@ -65,157 +64,145 @@ class StyleCodeBlock extends StatelessWidget {
           const Text(
             '{',
             style: TextStyle(
-              fontSize: 40,
+              fontSize: 35,
               color: kwhite,
             ),
           ),
           RichText(
-            text: const TextSpan(
-              children: [
+            text: TextSpan(
+              style: GoogleFonts.courierPrime(),
+              children: const [
                 TextSpan(
                   text: '   Eat',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     color: kblue,
-                    fontFamily: 'Inconsolata',
                   ),
                 ),
                 TextSpan(
                   text: '(',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     color: kyellow,
-                    fontFamily: 'Inconsolata',
                   ),
                 ),
                 TextSpan(
                   text: ')',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     color: kyellow,
-                    fontFamily: 'Inconsolata',
                   ),
                 ),
                 TextSpan(
                   text: ';',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     color: kwhite,
-                    fontFamily: 'Inconsolata',
                   ),
                 ),
               ],
             ),
           ),
           RichText(
-            text: const TextSpan(
-              children: [
+            text: TextSpan(
+              style: GoogleFonts.courierPrime(),
+              children: const [
                 TextSpan(
                   text: '   Sleep',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     color: kblue,
-                    fontFamily: 'Inconsolata',
                   ),
                 ),
                 TextSpan(
                   text: '(',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     color: kyellow,
-                    fontFamily: 'Inconsolata',
                   ),
                 ),
                 TextSpan(
                   text: ')',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     color: kyellow,
-                    fontFamily: 'Inconsolata',
                   ),
                 ),
                 TextSpan(
                   text: ';',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     color: kwhite,
-                    fontFamily: 'Inconsolata',
                   ),
                 ),
               ],
             ),
           ),
           RichText(
-            text: const TextSpan(
-              children: [
+            text: TextSpan(
+              style: GoogleFonts.courierPrime(),
+              children: const [
                 TextSpan(
                   text: '   Code',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     color: kblue,
-                    fontFamily: 'Inconsolata',
                   ),
                 ),
                 TextSpan(
                   text: '(',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     color: kyellow,
-                    fontFamily: 'Inconsolata',
                   ),
                 ),
                 TextSpan(
                   text: ')',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     color: kyellow,
-                    fontFamily: 'Inconsolata',
                   ),
                 ),
                 TextSpan(
                   text: ';',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     color: kwhite,
-                    fontFamily: 'Inconsolata',
                   ),
                 ),
               ],
             ),
           ),
           RichText(
-            text: const TextSpan(
-              children: [
+            text: TextSpan(
+              style: GoogleFonts.courierPrime(),
+              children: const [
                 TextSpan(
                   text: '   Repeat',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     color: kblue,
-                    fontFamily: 'Inconsolata',
                   ),
                 ),
                 TextSpan(
                   text: '(',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     color: kyellow,
-                    fontFamily: 'Inconsolata',
                   ),
                 ),
                 TextSpan(
                   text: ')',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     color: kyellow,
-                    fontFamily: 'Inconsolata',
                   ),
                 ),
                 TextSpan(
                   text: ';',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 35,
                     color: kwhite,
-                    fontFamily: 'Inconsolata',
                   ),
                 ),
               ],
@@ -224,7 +211,7 @@ class StyleCodeBlock extends StatelessWidget {
           const Text(
             '}',
             style: TextStyle(
-              fontSize: 40,
+              fontSize: 35,
               color: kwhite,
             ),
           ),

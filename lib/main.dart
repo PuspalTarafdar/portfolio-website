@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_website/about_me.dart';
 import 'package:portfolio_website/intro_section.dart';
 import 'package:portfolio_website/projects_section.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Puspal Tarafdar',
       theme: ThemeData(
-        fontFamily: 'Inconsolata',
+      textTheme: GoogleFonts.courierPrimeTextTheme(),
         scaffoldBackgroundColor: Colors.white,
       ),
       home: const WelcomeScreen(),

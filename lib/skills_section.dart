@@ -7,9 +7,8 @@ class SkillsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-       color: korange,
-       height: 600,
+      color: korange,
+      height: 600,
     );
-    
   }
 }

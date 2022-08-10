@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'constants.dart';
+import 'package:google_fonts/google_fonts.dart';
 class IntroPara extends StatelessWidget {
   const IntroPara({
     Key? key,
@@ -14,38 +15,39 @@ class IntroPara extends StatelessWidget {
         children: [
           const SizedBox(height: 100),
           RichText(
-            text: const TextSpan(
-              children: [
+            text: TextSpan(
+              style: GoogleFonts.courierPrime(),
+              children: const [
                 TextSpan(
                   text: 'cout',
                   style: TextStyle(
-                    fontSize: 60,
+                    fontSize: 50,
                     color:korange,
-                    fontFamily: 'Inconsolata',
+                    
                   ),
                 ),
                 TextSpan(
                   text: '<<',
                   style: TextStyle(
-                    fontSize: 60,
+                    fontSize: 50,
                     color: kwhite,
-                    fontFamily: 'Inconsolata',
+                    
                   ),
                 ),
                 TextSpan(
                   text: '"Hello Everyone!"',
                   style: TextStyle(
-                    fontSize: 60,
+                    fontSize: 50,
                     color: Color.fromARGB(255, 207, 118, 222),
-                    fontFamily: 'Inconsolata',
+                    
                   ),
                 ),
                 TextSpan(
                   text: ';',
                   style: TextStyle(
-                    fontSize: 60,
+                    fontSize: 50,
                     color: kwhite,
-                    fontFamily: 'Inconsolata',
+                    
                   ),
                 ),
               ],
@@ -62,15 +64,16 @@ class IntroPara extends StatelessWidget {
                   RichText(
                     
                     textAlign: TextAlign.justify,
-                    text: const TextSpan(
-                      children: [
+                    text: TextSpan(
+                      style: GoogleFonts.courierPrime(),
+                      children: const [
                         TextSpan(
                           text: 'I am ',
                           
                           style: TextStyle(
                             fontSize: 22,
                             color: kwhite,
-                            fontFamily: 'Inconsolata',
+                            
                           ),
                         ),
                         TextSpan(
@@ -78,7 +81,7 @@ class IntroPara extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 22,
                             color:kg,
-                            fontFamily: 'Inconsolata',
+                            
                           ),
                         ),
                         TextSpan(
@@ -86,7 +89,7 @@ class IntroPara extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 22,
                             color: kwhite,
-                            fontFamily: 'Inconsolata',
+                            
                           ),
                         ),
                         TextSpan(
@@ -94,7 +97,7 @@ class IntroPara extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 22,
                             color:kg,
-                            fontFamily: 'Inconsolata',
+                            
                           ),
                         ),
                         TextSpan(
@@ -102,7 +105,7 @@ class IntroPara extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 22,
                             color: kwhite,
-                            fontFamily: 'Inconsolata',
+                            
                           ),
                         ),
                         TextSpan(
@@ -110,7 +113,7 @@ class IntroPara extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 22,
                             color:kg,
-                            fontFamily: 'Inconsolata',
+                            
                           ),
                         ),
                         TextSpan(
@@ -118,7 +121,7 @@ class IntroPara extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 22,
                             color: kwhite,
-                            fontFamily: 'Inconsolata',
+                            
                           ),
                         ),
                         TextSpan(
@@ -126,7 +129,7 @@ class IntroPara extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 22,
                             color:kg,
-                            fontFamily: 'Inconsolata',
+                            
                           ),
                         ),
                         TextSpan(
@@ -134,7 +137,7 @@ class IntroPara extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 22,
                             color: kwhite,
-                            fontFamily: 'Inconsolata',
+                            
                           ),
                         ),
                         TextSpan(
@@ -142,7 +145,7 @@ class IntroPara extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 22,
                             color:kg,
-                            fontFamily: 'Inconsolata',
+                            
                           ),
                         ),
                         TextSpan(
@@ -150,7 +153,7 @@ class IntroPara extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 22,
                             color: kwhite,
-                            fontFamily: 'Inconsolata',
+                            
                           ),
                         ),
                         
@@ -159,7 +162,7 @@ class IntroPara extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 22,
                             color:kg,
-                            fontFamily: 'Inconsolata',
+                            
                           ),
                         ),
                         TextSpan(
@@ -167,7 +170,7 @@ class IntroPara extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 22,
                             color: kwhite,
-                            fontFamily: 'Inconsolata',
+                            
                           ),
                         ),
                        
@@ -176,7 +179,7 @@ class IntroPara extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 22,
                             color:kg,
-                            fontFamily: 'Inconsolata',
+                            
                           ),
                         ),
 
@@ -187,22 +190,24 @@ class IntroPara extends StatelessWidget {
                   ),
                   const SizedBox(height: 25),
                   RichText(
-                    text: const TextSpan(
-                      children: [
+                    text:  TextSpan(
+                      style: GoogleFonts.courierPrime(),
+                      children: const [
                         TextSpan(
                           text: 'Email: ',
                           style: TextStyle(
                             fontSize: 25,
                             color:kblue,
-                            fontFamily: 'Inconsolata',
+                            
                           ),
                         ),
                         TextSpan(
+                          
                           text: 'puspaltarafdar707@gmail.com',
                           style: TextStyle(
                             fontSize: 25,
                             color: kwhite,
-                            fontFamily: 'Inconsolata',
+                            
                           ),
                         ),
                        
@@ -211,14 +216,15 @@ class IntroPara extends StatelessWidget {
                   ),
                   const SizedBox(height: 10),
                   RichText(
-                    text: const TextSpan(
-                      children: [
+                    text: TextSpan(
+                      style: GoogleFonts.courierPrime(),
+                      children: const [
                         TextSpan(
                           text: 'GitHub: ',
                           style: TextStyle(
                             fontSize: 25,
                             color:kblue,
-                            fontFamily: 'Inconsolata',
+                            
                           ),
                         ),
                         TextSpan(
@@ -226,7 +232,7 @@ class IntroPara extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 25,
                             color: kwhite,
-                            fontFamily: 'Inconsolata',
+                            
                           ),
                         ),
                       ],

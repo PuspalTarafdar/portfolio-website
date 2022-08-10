@@ -9,6 +9,7 @@ class AboutMe extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      
       height: 900,
       color: kdarkblue,
       width: double.infinity,
