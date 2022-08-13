@@ -82,7 +82,7 @@ class SkillCard extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            color: const Color.fromARGB(255, 13, 13, 42),
+            color: kcardblue,
             child: Padding(
               padding: const EdgeInsets.only(left:27.0, right: 27.0, top: 20, bottom: 18),
               child: Column(

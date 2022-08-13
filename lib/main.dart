@@ -37,9 +37,9 @@ class WelcomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: kdarkblue, 
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            children: const [
+        child: ListView(
+          physics: BouncingScrollPhysics(),
+           children: const [
       
               IntroSection(),
               AboutMe(),
@@ -47,10 +47,25 @@ class WelcomeScreen extends StatelessWidget {
               ProjectsSections(),
              
             ],
-          
-          ),
-        ),
+
+        )
+       
       ),
     );
   }
 }
+
+//  child: SingleChildScrollView(
+//           physics: BouncingScrollPhysics(),
+//           child: Column(
+//             children: const [
+      
+//               IntroSection(),
+//               AboutMe(),
+//               SkillsSection(),
+//               ProjectsSections(),
+             
+//             ],
+          
+//           ),
+//         ),
