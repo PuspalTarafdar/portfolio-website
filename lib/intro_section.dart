@@ -95,7 +95,7 @@ class IntroSection extends StatelessWidget {
                             child: Icon(
                               FontAwesomeIcons.github,
                               size: 40,
-                              color: korange,
+                              color: kblue,
                             ),
                           ),
                            SizedBox(width: 20),
