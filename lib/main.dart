@@ -42,7 +42,7 @@ class WelcomeScreen extends StatelessWidget {
            children:  [
       
               Transform.scale(scale: 0.9, child: IntroSection()),
-              AboutMe(),
+              Transform.scale(scale: 0.9, child: AboutMe()),
               Transform.scale(scale: 0.9,child: SkillsSection()),
               Transform.scale(scale: 0.9,child: ProjectsSections()),
              

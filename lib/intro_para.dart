@@ -11,10 +11,11 @@ class IntroPara extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.end,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset('images/hello everyone image.jpg'),
+          Image.asset('images/hello everyone image.jpg',
+          width: 800),
           const SelectableText('   E-mail: puspaltarafdar707@gmail.com',
           style: TextStyle(
             color: kwhite,

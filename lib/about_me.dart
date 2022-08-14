@@ -9,7 +9,7 @@ class AboutMe extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 900,
+      height: 800,
       color: kdarkblue,
       width: double.infinity,
       child: Column(
@@ -24,25 +24,22 @@ class AboutMe extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10),
-          Container(
-            height: 600,
-            width: 1400,
-            color: kdarkblue,
-            child: Expanded(
+          Expanded(
               child: Padding(
-                padding: const EdgeInsets.only(left: 80, right: 80),
+                padding: const EdgeInsets.only(left: 150, right: 150),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: const [
                     StyleCodeBlock(),
                     SizedBox(
-                      width: 100,
+                      width: 30,
                     ),
                     IntroPara(),
                   ],
                 ),
               ),
             ),
-          ),
+          
         ],
       ),
     );
