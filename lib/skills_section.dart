@@ -21,43 +21,42 @@ class SkillsSection extends StatelessWidget {
               color: kwhite,
             ),
           ),
-          const SizedBox( height: 120),
+          const SizedBox(height: 120),
           Row(
-            
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
               SkillCard(skill: 'flutter'),
-              SizedBox( width: 80),
-             SkillCard(skill: 'dart'),
-              SizedBox( width: 80),
+              SizedBox(width: 80),
+              SkillCard(skill: 'dart'),
+              SizedBox(width: 80),
               SkillCard(skill: 'c++'),
-              SizedBox( width: 80),
+              SizedBox(width: 80),
               SkillCard(skill: 'react'),
             ],
           ),
-          const SizedBox( height: 50),
-           Row(
+          const SizedBox(height: 50),
+          Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
               SkillCard(skill: 'html'),
-              SizedBox( width: 80),
-             SkillCard(skill: 'css'),
-              SizedBox( width: 80),
+              SizedBox(width: 80),
+              SkillCard(skill: 'css'),
+              SizedBox(width: 80),
               SkillCard(skill: 'javascript'),
-              SizedBox( width: 80),
+              SizedBox(width: 80),
               SkillCard(skill: 'node'),
             ],
           ),
-          const SizedBox( height: 50),
-           Row(
+          const SizedBox(height: 50),
+          Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
               SkillCard(skill: 'python'),
-              SizedBox( width: 80),
+              SizedBox(width: 80),
               SkillCard(skill: 'mongodb'),
-              SizedBox( width: 80),
+              SizedBox(width: 80),
               SkillCard(skill: 'firebase'),
-              SizedBox( width: 80),
+              SizedBox(width: 80),
               SkillCard(skill: 'git'),
             ],
           ),
@@ -70,7 +69,8 @@ class SkillsSection extends StatelessWidget {
 class SkillCard extends StatelessWidget {
   final String skill;
   const SkillCard({
-    Key? key, required this.skill,
+    Key? key,
+    required this.skill,
   }) : super(key: key);
 
   @override
@@ -84,7 +84,8 @@ class SkillCard extends StatelessWidget {
           Container(
             color: kcardblue,
             child: Padding(
-              padding: const EdgeInsets.only(left:27.0, right: 27.0, top: 20, bottom: 18),
+              padding: const EdgeInsets.only(
+                  left: 27.0, right: 27.0, top: 20, bottom: 18),
               child: Column(
                 children: [
                   Image.asset(
@@ -93,11 +94,13 @@ class SkillCard extends StatelessWidget {
                     width: 80,
                   ),
                   const SizedBox(height: 18),
-                  Text(skill,
-                  style: const TextStyle(
-                    color: kwhite,
-                    fontSize: 15,
-                  ),)
+                  Text(
+                    skill,
+                    style: const TextStyle(
+                      color: kwhite,
+                      fontSize: 15,
+                    ),
+                  )
                 ],
               ),
             ),

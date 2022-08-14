@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio_website/constants.dart';
 import 'package:portfolio_website/top_bar_option.dart';
+import 'package:url_launcher/link.dart';
 
 class IntroSection extends StatelessWidget {
   const IntroSection({Key? key}) : super(key: key);
@@ -14,23 +15,23 @@ class IntroSection extends StatelessWidget {
       height: 850,
       child: Column(
         children: [
-          Padding(
-            padding: const EdgeInsets.only(left:430,right:430),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                TopBarOption(option: 'Home'),
-                SizedBox(width: 10),
-                TopBarOption(option: 'About'),
-                SizedBox(width: 10),
-                TopBarOption(option: 'Skills'),
-                SizedBox(width: 10),
-                TopBarOption(option: 'Projects'),
-                SizedBox(width: 10),
-                TopBarOption(option: 'Contact'),
-              ],
-            ),
-          ),
+          // Padding(
+          //   padding: const EdgeInsets.only(left:430,right:430),
+          //   child: Row(
+          //     mainAxisAlignment: MainAxisAlignment.center,
+          //     children: const [
+          //       TopBarOption(option: 'Home'),
+          //       SizedBox(width: 10),
+          //       TopBarOption(option: 'About'),
+          //       SizedBox(width: 10),
+          //       TopBarOption(option: 'Skills'),
+          //       SizedBox(width: 10),
+          //       TopBarOption(option: 'Projects'),
+          //       SizedBox(width: 10),
+          //       TopBarOption(option: 'Contact'),
+          //     ],
+          //   ),
+          // ),
           const SizedBox(
             height: 30,
           ),
@@ -39,20 +40,17 @@ class IntroSection extends StatelessWidget {
             height: 600,
             color: kdarkblue,
             child: Row(
-              children:  [
+              children: [
                 Expanded(
                   child: Center(
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(3000),
-                      child: Image.asset(
-                        
-                        'images/_DSC0760 (2).JPG',
-                        height: 400,
-                        width: 400,
-                        
-                      ),
-                    )
-                  ),
+                      child: ClipRRect(
+                    borderRadius: BorderRadius.circular(3000),
+                    child: Image.asset(
+                      'images/_DSC0760 (2).JPG',
+                      height: 400,
+                      width: 400,
+                    ),
+                  )),
                 ),
                 Expanded(
                   child: Column(
@@ -86,57 +84,110 @@ class IntroSection extends StatelessWidget {
                       ),
                       const SizedBox(height: 40),
                       Padding(
-                        padding: const EdgeInsets.only(left:100,right:100),
+                        padding: const EdgeInsets.only(left: 100, right: 100),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: const [
-                          
-                          Expanded(
-                            child: Icon(
-                              FontAwesomeIcons.github,
-                              size: 40,
-                              color: kblue,
+                          children: [
+                            Expanded(
+                              child: Link(
+                                  target: LinkTarget.blank,
+                                  uri: Uri.parse(
+                                      'https://github.com/PuspalTarafdar'),
+                                  builder: ((context, followLink) =>
+                                      MouseRegion(
+                                        cursor: SystemMouseCursors.click,
+                                        child: GestureDetector(
+                                          onTap: followLink,
+                                          child: const Icon(
+                                            FontAwesomeIcons.github,
+                                            size: 40,
+                                            color: kblue,
+                                          ),
+                                        ),
+                                      ))),
                             ),
-                          ),
-                           SizedBox(width: 20),
-                          Expanded(
-                            child: Icon(
-                              FontAwesomeIcons.linkedin,
-                              size: 40,
-                              color: kblue,
+                            const SizedBox(width: 20),
+                            Expanded(
+                              child: Link(
+                                  target: LinkTarget.blank,
+                                  uri: Uri.parse(
+                                      'https://www.linkedin.com/in/puspal-tarafdar-84a55421b/'),
+                                  builder: ((context, followLink) =>
+                                      MouseRegion(
+                                        cursor: SystemMouseCursors.click,
+                                        child: GestureDetector(
+                                          onTap: followLink,
+                                          child: const Icon(
+                                            FontAwesomeIcons.linkedin,
+                                            size: 40,
+                                            color: kblue,
+                                          ),
+                                        ),
+                                      ))),
                             ),
-                          ),
-                           SizedBox(width: 20),
-                          Expanded(
-                            child: Icon(
-                              FontAwesomeIcons.solidChessKnight,
-                              size: 40,
-                              color: kblue,
+                            const SizedBox(width: 20),
+                            Expanded(
+                              child: Link(
+                                  target: LinkTarget.blank,
+                                  uri: Uri.parse(
+                                      'https://lichess.org/@/Rook7Knight'),
+                                  builder: ((context, followLink) =>
+                                      MouseRegion(
+                                        cursor: SystemMouseCursors.click,
+                                        child: GestureDetector(
+                                          onTap: followLink,
+                                          child: const Icon(
+                                            FontAwesomeIcons.solidChessKnight,
+                                            size: 40,
+                                            color: kblue,
+                                          ),
+                                        ),
+                                      ))),
                             ),
-                          ),
-                           SizedBox(width: 20),
-                          Expanded(
-                            child: Icon(
-                              FontAwesomeIcons.hackerrank,
-                              size: 50,
-                              color: kblue,
+                            const SizedBox(width: 20),
+                            Expanded(
+                              child: Link(
+                                  target: LinkTarget.blank,
+                                  uri: Uri.parse(
+                                      'https://www.hackerrank.com/puspaltarafdar71'),
+                                  builder: ((context, followLink) =>
+                                      MouseRegion(
+                                        cursor: SystemMouseCursors.click,
+                                        child: GestureDetector(
+                                          onTap: followLink,
+                                          child: const Icon(
+                                            FontAwesomeIcons.hackerrank,
+                                            size: 40,
+                                            color: kblue,
+                                          ),
+                                        ),
+                                      ))),
                             ),
-                          ),
-                          SizedBox(width: 20),
-                          Expanded(
-                            child: Icon(
-                              FontAwesomeIcons.code,
-                              size: 35,
-                              color: kblue,
+                            const SizedBox(width: 20),
+                            Expanded(
+                              child: Link(
+                                  target: LinkTarget.blank,
+                                  uri: Uri.parse(
+                                      'https://www.codingninjas.com/codestudio/profile/6b486517-182d-4ec4-8f2e-cef4a8872284'),
+                                  builder: ((context, followLink) =>
+                                      MouseRegion(
+                                        cursor: SystemMouseCursors.click,
+                                        child: GestureDetector(
+                                          onTap: followLink,
+                                          child: const Icon(
+                                            FontAwesomeIcons.code,
+                                            size: 40,
+                                            color: kblue,
+                                          ),
+                                        ),
+                                      ))),
                             ),
-                          )
-
-                        ],),
+                          ],
+                        ),
                       )
                     ],
                   ),
                 ),
-                 
               ],
             ),
           ),

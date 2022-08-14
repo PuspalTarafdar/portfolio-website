@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'constants.dart';
 import 'package:google_fonts/google_fonts.dart';
+
 class IntroPara extends StatelessWidget {
   const IntroPara({
     Key? key,
@@ -22,8 +23,7 @@ class IntroPara extends StatelessWidget {
                   text: 'cout',
                   style: TextStyle(
                     fontSize: 50,
-                    color:korange,
-                    
+                    color: korange,
                   ),
                 ),
                 TextSpan(
@@ -31,7 +31,6 @@ class IntroPara extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 50,
                     color: kwhite,
-                    
                   ),
                 ),
                 TextSpan(
@@ -39,7 +38,6 @@ class IntroPara extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 50,
                     color: Color.fromARGB(255, 207, 118, 222),
-                    
                   ),
                 ),
                 TextSpan(
@@ -47,7 +45,6 @@ class IntroPara extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 50,
                     color: kwhite,
-                    
                   ),
                 ),
               ],
@@ -60,28 +57,23 @@ class IntroPara extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                 
                   RichText(
-                    
                     textAlign: TextAlign.justify,
                     text: TextSpan(
                       style: GoogleFonts.courierPrime(),
                       children: const [
                         TextSpan(
                           text: 'I am ',
-                          
                           style: TextStyle(
                             fontSize: 22,
                             color: kwhite,
-                            
                           ),
                         ),
                         TextSpan(
                           text: 'Puspal Tarafdar',
                           style: TextStyle(
                             fontSize: 22,
-                            color:kg,
-                            
+                            color: kg,
                           ),
                         ),
                         TextSpan(
@@ -89,15 +81,13 @@ class IntroPara extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 22,
                             color: kwhite,
-                            
                           ),
                         ),
                         TextSpan(
                           text: 'electrical engineering',
                           style: TextStyle(
                             fontSize: 22,
-                            color:kg,
-                            
+                            color: kg,
                           ),
                         ),
                         TextSpan(
@@ -105,15 +95,13 @@ class IntroPara extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 22,
                             color: kwhite,
-                            
                           ),
                         ),
                         TextSpan(
                           text: 'Coding',
                           style: TextStyle(
                             fontSize: 22,
-                            color:kg,
-                            
+                            color: kg,
                           ),
                         ),
                         TextSpan(
@@ -121,15 +109,13 @@ class IntroPara extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 22,
                             color: kwhite,
-                            
                           ),
                         ),
                         TextSpan(
                           text: 'websites',
                           style: TextStyle(
                             fontSize: 22,
-                            color:kg,
-                            
+                            color: kg,
                           ),
                         ),
                         TextSpan(
@@ -137,32 +123,28 @@ class IntroPara extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 22,
                             color: kwhite,
-                            
                           ),
                         ),
                         TextSpan(
                           text: 'mobile apps',
                           style: TextStyle(
                             fontSize: 22,
-                            color:kg,
-                            
+                            color: kg,
                           ),
                         ),
                         TextSpan(
-                          text: ". The path of learning coding is never ending and that's why learning is my full time job.\nOther than coding I also love to watch movies and series. I love playing ",
+                          text:
+                              ". The path of learning coding is never ending and that's why learning is my full time job.\nOther than coding I also love to watch movies and series. I love playing ",
                           style: TextStyle(
                             fontSize: 22,
                             color: kwhite,
-                            
                           ),
                         ),
-                        
                         TextSpan(
                           text: 'chess',
                           style: TextStyle(
                             fontSize: 22,
-                            color:kg,
-                            
+                            color: kg,
                           ),
                         ),
                         TextSpan(
@@ -170,47 +152,37 @@ class IntroPara extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 22,
                             color: kwhite,
-                            
                           ),
                         ),
-                       
                         TextSpan(
                           text: 'Formula 1',
                           style: TextStyle(
                             fontSize: 22,
-                            color:kg,
-                            
+                            color: kg,
                           ),
                         ),
-
-
-                       
                       ],
                     ),
                   ),
                   const SizedBox(height: 25),
                   RichText(
-                    text:  TextSpan(
+                    text: TextSpan(
                       style: GoogleFonts.courierPrime(),
                       children: const [
                         TextSpan(
                           text: 'Email: ',
                           style: TextStyle(
                             fontSize: 25,
-                            color:kblue,
-                            
+                            color: kblue,
                           ),
                         ),
                         TextSpan(
-                          
                           text: 'puspaltarafdar707@gmail.com',
                           style: TextStyle(
                             fontSize: 25,
                             color: kwhite,
-                            
                           ),
                         ),
-                       
                       ],
                     ),
                   ),
@@ -223,8 +195,7 @@ class IntroPara extends StatelessWidget {
                           text: 'GitHub: ',
                           style: TextStyle(
                             fontSize: 25,
-                            color:kblue,
-                            
+                            color: kblue,
                           ),
                         ),
                         TextSpan(
@@ -232,7 +203,6 @@ class IntroPara extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 25,
                             color: kwhite,
-                            
                           ),
                         ),
                       ],

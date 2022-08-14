@@ -26,7 +26,6 @@ class StyleCodeBlock extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           RichText(
-            
             text: TextSpan(
               style: GoogleFonts.courierPrime(),
               children: const [

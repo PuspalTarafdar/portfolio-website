@@ -54,7 +54,7 @@ class ProjectsSections extends StatelessWidget {
                               ),
                               const Text(""),
                               const Text(
-                                binarytotexttext,
+                                sleepstagingtext,
                                 style: TextStyle(
                                   color: kwhite,
                                   fontSize: 20,
@@ -73,7 +73,8 @@ class ProjectsSections extends StatelessWidget {
                                         child: const Text(
                                           "Link to Article --> DOI",
                                           style: TextStyle(
-                                            color: Color.fromARGB(255, 74, 252, 255),
+                                            color: Color.fromARGB(
+                                                255, 74, 252, 255),
                                             fontSize: 16,
                                             fontWeight: FontWeight.bold,
                                           ),
@@ -149,7 +150,8 @@ class ProjectsSections extends StatelessWidget {
                                         child: const Text(
                                           "Github Repo --> BMI Calculator",
                                           style: TextStyle(
-                                            color: Color.fromARGB(255, 74, 252, 255),
+                                            color: Color.fromARGB(
+                                                255, 74, 252, 255),
                                             fontSize: 16,
                                             fontWeight: FontWeight.bold,
                                           ),
@@ -206,7 +208,7 @@ class ProjectsSections extends StatelessWidget {
                               left: 20.0, top: 20, right: 10),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children:  [
+                            children: [
                               const Text(
                                 'Flare e-Book UI',
                                 style: TextStyle(
@@ -236,7 +238,8 @@ class ProjectsSections extends StatelessWidget {
                                         child: const Text(
                                           "Github Repo --> Flare e-book",
                                           style: TextStyle(
-                                            color: Color.fromARGB(255, 74, 252, 255),
+                                            color: Color.fromARGB(
+                                                255, 74, 252, 255),
                                             fontSize: 16,
                                             fontWeight: FontWeight.bold,
                                           ),
@@ -323,7 +326,8 @@ class ProjectsSections extends StatelessWidget {
                                         child: const Text(
                                           "Link to Website --> Binary to Text",
                                           style: TextStyle(
-                                            color: Color.fromARGB(255, 74, 252, 255),
+                                            color: Color.fromARGB(
+                                                255, 74, 252, 255),
                                             fontSize: 16,
                                             fontWeight: FontWeight.bold,
                                           ),
@@ -370,7 +374,7 @@ class ProjectsSections extends StatelessWidget {
                               left: 20.0, top: 20, right: 10),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children:  [
+                            children: [
                               const Text(
                                 'To-Do App for Desktop',
                                 style: TextStyle(
@@ -400,7 +404,8 @@ class ProjectsSections extends StatelessWidget {
                                         child: const Text(
                                           "Github Repo --> To-Do App",
                                           style: TextStyle(
-                                            color: Color.fromARGB(255, 74, 252, 255),
+                                            color: Color.fromARGB(
+                                                255, 74, 252, 255),
                                             fontSize: 16,
                                             fontWeight: FontWeight.bold,
                                           ),
@@ -463,7 +468,6 @@ class ProjectsSections extends StatelessWidget {
                                 textAlign: TextAlign.justify,
                               ),
                               Text(""),
-                            
                             ],
                           ),
                         ),

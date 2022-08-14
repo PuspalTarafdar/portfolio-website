@@ -39,12 +39,12 @@ class WelcomeScreen extends StatelessWidget {
       body: SafeArea(
         child: ListView(
           physics: BouncingScrollPhysics(),
-           children: const [
+           children:  [
       
-              IntroSection(),
-              AboutMe(),
-              SkillsSection(),
-              ProjectsSections(),
+              Transform.scale(scale: 0.9, child: IntroSection()),
+              Transform.scale(scale: 0.9,child: AboutMe()),
+              Transform.scale(scale: 0.9,child: SkillsSection()),
+              Transform.scale(scale: 0.9,child: ProjectsSections()),
              
             ],
 
@@ -54,18 +54,3 @@ class WelcomeScreen extends StatelessWidget {
     );
   }
 }
-
-//  child: SingleChildScrollView(
-//           physics: BouncingScrollPhysics(),
-//           child: Column(
-//             children: const [
-      
-//               IntroSection(),
-//               AboutMe(),
-//               SkillsSection(),
-//               ProjectsSections(),
-             
-//             ],
-          
-//           ),
-//         ),
