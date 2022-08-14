@@ -28,11 +28,12 @@ class AboutMe extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.only(left: 150, right: 150),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: const [
                     StyleCodeBlock(),
                     SizedBox(
-                      width: 30,
+                      width: 70,
                     ),
                     IntroPara(),
                   ],
