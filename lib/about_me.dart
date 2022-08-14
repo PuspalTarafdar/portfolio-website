@@ -23,7 +23,7 @@ class AboutMe extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          const SizedBox(height: 50),
+          const SizedBox(height: 10),
           Container(
             height: 600,
             width: 1400,
@@ -35,7 +35,7 @@ class AboutMe extends StatelessWidget {
                   children: const [
                     StyleCodeBlock(),
                     SizedBox(
-                      width: 200,
+                      width: 100,
                     ),
                     IntroPara(),
                   ],
